@@ -1,7 +1,7 @@
 
 // 深拷贝
 const copyObj = (obj) => {
-    const newObj = {};
+    let newObj = {};
     for (let key in obj) {
         if (typeof obj[key] !== 'object') {
             newObj[key] = obj[key];
